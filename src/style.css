@@ -1,0 +1,94 @@
+body {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+header > h1{
+  margin-bottom: 0;
+
+}
+
+.Board{
+  display: grid;
+  grid-template-columns: 50px 50px 50px 50px;
+  column-gap: 50px;
+  row-gap: 25px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.Board > button {
+  font-size: 20px;
+  height: 50px;
+  border-radius: 5px;
+  border: 0;
+  font-weight: 700;
+}
+
+.unselectedKey{
+  background-color: #E5E7EB;
+}
+
+.wordDisplay{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.wordDisplay > p {
+  font-size: 20px;
+}
+
+.bottomContent{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bottomContent > button{
+  width: 120px;
+  height: 40px;
+  border: 0;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+}
+
+#submitWordButton{
+  background-color: #22C55D;
+}
+
+#resetGameButton{
+  background-color: #EF4444;
+  margin-top: 10px;
+}
+
+.selectedKey{
+  background-color: #60A5FA;
+  color: white;
+}
+.foundWords{
+  display: flex;
+  max-width: 400px;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.foundWords > span{
+  background-color: #E5E7EB;
+  border-radius: 3px;
+  padding: 4.5px;
+  position: relative;
+}
+
+.bottomContent > h3{
+  margin-bottom: 10px;
+}
